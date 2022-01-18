@@ -19,6 +19,20 @@ class RouteServiceProvider extends ServiceProvider
      */
     public const HOME = '/dashboard';
 
+
+    /**
+     * this function used to redirect if I have many guards like "admin, subscriber" for each of those created guards this function will return to url like "admin/dashboard, subscriber/dashboard".
+     *
+     * "HOME" above is for normal user
+     *
+     * //*This is If you have many dashboards for many guards.
+     *
+     */
+    public static function redirectTo($guard)
+    {
+        return $guard . "/dashboard";
+    }
+
     /**
      * The controller namespace for the application.
      *
