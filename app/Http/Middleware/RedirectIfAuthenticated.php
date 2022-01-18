@@ -25,10 +25,10 @@ class RedirectIfAuthenticated
             if (Auth::guard($guard)->check()) {
 
                 //this to make it a more dynamic it will redirect weather if "admin or web " guards
-                return redirect($guard . "/dashboard");
+                // return redirect($guard . "/dashboard");
 
                 //Default Code
-                //return redirect(RouteServiceProvider::HOME);
+                return redirect(RouteServiceProvider::HOME);
             }
         }
 
