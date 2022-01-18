@@ -14,7 +14,7 @@
             </div>
             @endif
 
-            <form method="POST" action="{{ isset($guard)? route('admin.login'):route('login') }}">
+            <form method="POST" action="{{ isset($guard)? url($guard.'/login'):route('login') }}">
                 @csrf
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Email') }}" />
