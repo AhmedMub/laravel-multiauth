@@ -28,10 +28,10 @@ class RouteServiceProvider extends ServiceProvider
      * //*This is If you have many dashboards for many guards.
      *
      */
-    public static function redirectTo($guard)
-    {
-        return $guard . "/dashboard";
-    }
+    // public static function redirectTo($guard)
+    // {
+    //     return $guard . "/dashboard";
+    // }
 
     /**
      * The controller namespace for the application.
