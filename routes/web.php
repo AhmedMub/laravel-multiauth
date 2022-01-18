@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 //for Admin dashboard
-Route::prefix('admin')->middleware(['guest:admin'])->name('admin.')->group(function () {
+Route::prefix('admin')->middleware(['admin:admin'])->name('admin.')->group(function () {
 
     Route::get('/login', [AdminController::class, 'adminLogin'])->name('login');
 
