@@ -99,7 +99,7 @@
                                                          document.getElementById('logout-form').submit();">
                                 {{ __('Log out') }}
                             </x-jet-dropdown-link>
-                            <form method="POST" id="logout-form" action="{{ route('logout') }}">
+                            <form method="POST" id="logout-form" action="{{ route('admin.logout') }}">
                                 @csrf
                             </form>
                         </x-slot>
