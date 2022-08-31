@@ -5,7 +5,11 @@
         </x-slot>
 
         <div class="card-body">
-
+            @if (str_contains(url()->current(), 'admin'))
+            <h2 style="text-align: center">Admin Login</h2>
+            @else
+            <h2 style="text-align: center">User Login</h2>
+            @endif
             <x-jet-validation-errors class="mb-3 rounded-0" />
 
             @if (session('status'))
