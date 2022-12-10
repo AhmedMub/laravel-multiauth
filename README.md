@@ -1,6 +1,16 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-# Laravel Jetstream Multi Auth.
+# Laravel Multiple Authentications.
+
+This is an implementation for laravel multiple authentication using laravel jetstream. 
+
+Laravel Jetstream is a beautifully designed application starter kit for Laravel and provides the perfect starting point for your next Laravel application.
+
+Jetstream provides the implementation for your application’s login, registration, email verification, two-factor authentication, session management, API via Laravel Sanctum, and optional team management features.
+
+Jetstream is designed using Tailwind CSS and offers your choice of Livewire or Inertia scaffolding.
+
+This application will have an authentication both for admin and users. In other words, an admin can log in to his or her dashboard as well as the user with different tables.
 
 ## User Login 
 
